@@ -1,5 +1,5 @@
 "	**********************************************************
-"		File: PhpConsole.vim
+"		File: php_console.vim
 "	**********************************************************
 "		Purpose: Use php console application for debug messages.
 "		Installation: Put it in the ftplugin directory. Go into the environment
@@ -10,7 +10,9 @@
 "		finishing removing the errors you can open the file in the browser.
 "		Author: Klaus Horsten <horsten at gmx.at>
 "		Copyright: No claim. Without any warranty.
-"		Credits: Mikolaj Machowski wrote the errorformat.
+"		Credits: 
+"		Mikolaj Machowski (wrote the errorformat).
+"		Ben Dong
 "	**********************************************************
 
 function! ParsePhpFile()
