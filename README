@@ -1,0 +1,25 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=779
+
+This is for windows.
+
+For unix see http://vim.sourceforge.net/scripts/script.php?script_id=326.
+(But you can adapt this also for unix. Just the path-reference to the php.exe is different.)
+
+Go into your php-file and :call ParsePhpFile().
+
+Write a mapping to automat this. E.g. 
+map <F5> :call ParsePhpFile()<cr>
+imap <F5> <esc>:call ParsePhpFile()<cr>
+
+Now you can debug your php-file without leaving vim. 
+
+You can jump to the error lines by clicking on the compiler output in the window that opens below.
+
+After finishing removing the errors you can open your php-file in the browser.
+
+Advantages:
+* You do not rely on apache. This means:
+* You can open the php-files everywhere in the filesystem (also outside of htdocs).
+* There is no difference between the console and the browser output. (When there is no error output you see the normal html output.)
+* Roundtrip error checking is possible without leaving vim.
+
